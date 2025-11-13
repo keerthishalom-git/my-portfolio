@@ -136,7 +136,6 @@ export default function Portfolio() {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-purple-50 overflow-hidden" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", color: '#1a1a1a' }}>
-      {/* Animated Background */}
       <div className="fixed inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-white via-orange-50 to-purple-100"></div>
         <div className="absolute inset-0 opacity-40">
@@ -147,15 +146,14 @@ export default function Portfolio() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.02),transparent_50%)]"></div>
       </div>
 
-      {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/60 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-xl tracking-wider" style={{ fontWeight: 600, color: '#1a1a1a' }}>KS</div>
           <div className="flex gap-8 text-sm" style={{ color: '#2a2a2a' }}>
             {['Home', 'About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
-              
+              <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={'#' + item.toLowerCase()}
                 className="hover:text-orange-600 transition-colors duration-300 relative group"
               >
                 {item}
@@ -166,10 +164,8 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section id="home" className="relative z-10 min-h-screen flex items-center justify-center px-6 py-20">
         <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12">
-          {/* Left Side - Text Content */}
           <div className="flex-1 space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl tracking-tight animate-fade-in" style={{ fontWeight: 200, background: 'linear-gradient(135deg, #f97316 0%, #a855f7 50%, #ec4899 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
@@ -211,7 +207,6 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* Right Side - Profile Image with Upload */}
           <div className="flex-shrink-0">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-400 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-60 animate-pulse"></div>
@@ -234,7 +229,6 @@ export default function Portfolio() {
                   />
                 </label>
               </div>
-              {/* Animated floating elements */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-orange-400/30 rounded-full blur-2xl animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-purple-400/30 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
             </div>
@@ -246,7 +240,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="relative z-10 py-32 px-6 bg-white/30">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl mb-8 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>About Me</h2>
@@ -256,7 +249,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Experience Section */}
       <section id="experience" className="relative z-10 py-32 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Experience</h2>
@@ -287,7 +279,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="relative z-10 py-32 px-6 bg-white/30">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Skills & Expertise</h2>
@@ -308,7 +299,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="relative z-10 py-32 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Projects & Publications</h2>
@@ -340,7 +330,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="relative z-10 py-32 px-6">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="text-4xl mb-8" style={{ fontWeight: 300, color: '#1a1a1a' }}>Let's Connect</h2>
@@ -356,7 +345,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="relative z-10 py-8 px-6 border-t border-gray-200">
         <div className="max-w-5xl mx-auto text-center text-sm" style={{ color: '#4a4a4a' }}>
           <p>© 2025 Keerthi Shalom Vaddepalli. Crafted with precision.</p>

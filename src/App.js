@@ -3,7 +3,23 @@ import { Github, Linkedin, Mail, ExternalLink, ChevronDown, FileText } from 'luc
 
 export default function Portfolio() {
   const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763015742849-2a740ea6-bcc2-4408-866b-b0e9ea93fcc0.jpg');
-
+  const downloadResume = () => {
+    const resumeContent = `KEERTHI SHALOM VADDEPALLI
+www.keerthishalom.com | linkedin.com/in/keerthi-shalom-v-625023323 | keerthishalom1@gmail.com | +1 314-915-4955
+... (rest of resume content)
+    `;
+    
+    const blob = new Blob([resumeContent], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Keerthi_Shalom_Resume.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+  
   useEffect(() => {
     const link = document.createElement('link');
     link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap';
@@ -356,4 +372,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
 

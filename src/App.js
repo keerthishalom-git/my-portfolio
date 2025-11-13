@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, FileText } from 'lucide-react';
 
 export default function Portfolio() {
-  const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763016968993-a9aabab3-61b1-4f39-9d8d-3dd093891321.jpg');
+  const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763017038042-cb4c5d00-fd72-4801-8ffd-7fe76880210b.jpg');
 
   const downloadResume = () => {
     const resumeContent = `KEERTHI SHALOM VADDEPALLI
@@ -409,3 +409,4 @@ Publications: AI hallucinations, Deep Learning Journey, Netflix and Blockbuster,
     </div>
   );
 }
+

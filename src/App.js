@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, FileText } from 'lucide-react';
 
 export default function Portfolio() {
-  const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763017891828-e0a0fb39-a581-4eb9-92be-f34862501094.jpg');
+  const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763018575902-8f0c1d79-e6ee-4fac-bb89-748ea54279a7.jpg');
 
   useEffect(() => {
     const link = document.createElement('link');
@@ -356,3 +356,4 @@ export default function Portfolio() {
     </div>
   );
 }
+

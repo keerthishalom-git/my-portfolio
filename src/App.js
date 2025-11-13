@@ -2,60 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, FileText } from 'lucide-react';
 
 export default function Portfolio() {
-  const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763017038042-cb4c5d00-fd72-4801-8ffd-7fe76880210b.jpg');
-
-  const downloadResume = () => {
-    const resumeContent = `KEERTHI SHALOM VADDEPALLI
-www.keerthishalom.com | linkedin.com/in/keerthi-shalom-v-625023323 | keerthishalom1@gmail.com | +1 314-915-4955
-
-SKILLS
-Python, SQL, scikit-learn, TensorFlow, PyTorch, NLP, Predictive Modeling, Data Pipelines, Flask, Django, Node.js, 
-AWS (EC2, SNS, IAM), Git, Jupyter, React.js, Product Design, Agile/Scrum, Jira
-
-EXPERIENCE
-
-Episcopal Diocese of Missouri & International Christian Fellowship – SLU
-Web Developer • UI/UX Designer • Social Media Manager | St. Louis, MO | 10/2025 – Present
-• Designed and developed AI-integrated, responsive web interfaces using modern frontend frameworks, driving a 38% increase in system efficiency and engagement
-• Built consistent brand experiences and websites across platforms (Google, Instagram, YouTube, Threads), Managed multi-platform social media presence, increasing engagement by 55%
-
-Airtribe
-AI-First Product Manager & Software Engineering Intern | Remote | 07/2025 – 09/2025
-• Implemented prompt engineering, LoRA, and model tuning to improve accuracy and performance
-• Developed end-to-end AI-first applications using LLMs (OpenAI, Claude, Mistral), embeddings, and RAG pipelines
-• Built a capstone AI product integrating backend systems, databases, and AI-native tools for scalable deployment
-
-Sodexo
-Technical Business Developer – Intern | St. Louis, MO | 05/2024 – 07/2025
-• Engineered an AI-driven inventory management system using predictive analytics and real-time data processing
-• Achieved 40% reduction in manual errors and 30% improvement in process efficiency through scalable automation
-• Delivered end-to-end SDLC: requirements gathering, backend design, automation logic, and API integration
-
-Amazon
-SDE Recruiter | Hyderabad, India | 08/2019 – 01/2024
-• Launched Seven warehouse sites across North America, integrating ERP and Salesforce-based tools
-• Resolved 4000+ stakeholder tickets and improved reporting using BI and automation tools
-• Recruited and screened 2000+ candidates for SDE roles, leading full-cycle technical hiring
-
-EDUCATION
-M.S. in Computer Science & Management Information Systems | GPA: 3.93 | 09/2024 – 12/2025
-Certifications: Deep Learning Specialization, Digital Product Management, Architecting Solutions on AWS
-AI Product Manager & Agentic AI – Microsoft & DeepLearning.ai
-
-PROJECTS AND PUBLICATIONS
-Projects: Deep Learning application, Agentic AI, Masters Research Project – AI based Recruiting Firm
-Publications: AI hallucinations, Deep Learning Journey, Netflix and Blockbuster, Fenty Beauty Evolution Application`;
-
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Keerthi_Shalom_Resume.txt';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-  };
+  const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763017891828-e0a0fb39-a581-4eb9-92be-f34862501094.jpg');
 
   useEffect(() => {
     const link = document.createElement('link');
@@ -236,10 +183,10 @@ Publications: AI hallucinations, Deep Learning Journey, Netflix and Blockbuster,
                 <Github className="w-5 h-5" />
                 <span className="text-sm font-medium">GitHub</span>
               </a>
-              <button onClick={downloadResume} className="flex items-center gap-2 px-5 py-3 rounded-full bg-black/5 hover:bg-pink-100 transition-all duration-300 hover:scale-105" style={{ color: '#1a1a1a' }}>
+              <a href="https://drive.google.com/uc?export=download&id=1wPvPgFhUm_Q35J3FMedjZH9ZXfDHTgXa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 rounded-full bg-black/5 hover:bg-pink-100 transition-all duration-300 hover:scale-105" style={{ color: '#1a1a1a' }}>
                 <FileText className="w-5 h-5" />
                 <span className="text-sm font-medium">Resume</span>
-              </button>
+              </a>
               <a href="https://medium.com/@keerthishalom1" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 rounded-full bg-black/5 hover:bg-pink-100 transition-all duration-300 hover:scale-105" style={{ color: '#1a1a1a' }}>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
@@ -409,4 +356,3 @@ Publications: AI hallucinations, Deep Learning Journey, Netflix and Blockbuster,
     </div>
   );
 }
-

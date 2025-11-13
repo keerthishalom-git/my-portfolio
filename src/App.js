@@ -2,13 +2,50 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, FileText } from 'lucide-react';
 
 export default function Portfolio() {
-  const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763015742849-2a740ea6-bcc2-4408-866b-b0e9ea93fcc0.jpg');
+  const [profileImage, setProfileImage] = useState('https://image2url.com/images/1763016968993-a9aabab3-61b1-4f39-9d8d-3dd093891321.jpg');
+
   const downloadResume = () => {
     const resumeContent = `KEERTHI SHALOM VADDEPALLI
 www.keerthishalom.com | linkedin.com/in/keerthi-shalom-v-625023323 | keerthishalom1@gmail.com | +1 314-915-4955
-... (rest of resume content)
-    `;
-    
+
+SKILLS
+Python, SQL, scikit-learn, TensorFlow, PyTorch, NLP, Predictive Modeling, Data Pipelines, Flask, Django, Node.js, 
+AWS (EC2, SNS, IAM), Git, Jupyter, React.js, Product Design, Agile/Scrum, Jira
+
+EXPERIENCE
+
+Episcopal Diocese of Missouri & International Christian Fellowship – SLU
+Web Developer • UI/UX Designer • Social Media Manager | St. Louis, MO | 10/2025 – Present
+• Designed and developed AI-integrated, responsive web interfaces using modern frontend frameworks, driving a 38% increase in system efficiency and engagement
+• Built consistent brand experiences and websites across platforms (Google, Instagram, YouTube, Threads), Managed multi-platform social media presence, increasing engagement by 55%
+
+Airtribe
+AI-First Product Manager & Software Engineering Intern | Remote | 07/2025 – 09/2025
+• Implemented prompt engineering, LoRA, and model tuning to improve accuracy and performance
+• Developed end-to-end AI-first applications using LLMs (OpenAI, Claude, Mistral), embeddings, and RAG pipelines
+• Built a capstone AI product integrating backend systems, databases, and AI-native tools for scalable deployment
+
+Sodexo
+Technical Business Developer – Intern | St. Louis, MO | 05/2024 – 07/2025
+• Engineered an AI-driven inventory management system using predictive analytics and real-time data processing
+• Achieved 40% reduction in manual errors and 30% improvement in process efficiency through scalable automation
+• Delivered end-to-end SDLC: requirements gathering, backend design, automation logic, and API integration
+
+Amazon
+SDE Recruiter | Hyderabad, India | 08/2019 – 01/2024
+• Launched Seven warehouse sites across North America, integrating ERP and Salesforce-based tools
+• Resolved 4000+ stakeholder tickets and improved reporting using BI and automation tools
+• Recruited and screened 2000+ candidates for SDE roles, leading full-cycle technical hiring
+
+EDUCATION
+M.S. in Computer Science & Management Information Systems | GPA: 3.93 | 09/2024 – 12/2025
+Certifications: Deep Learning Specialization, Digital Product Management, Architecting Solutions on AWS
+AI Product Manager & Agentic AI – Microsoft & DeepLearning.ai
+
+PROJECTS AND PUBLICATIONS
+Projects: Deep Learning application, Agentic AI, Masters Research Project – AI based Recruiting Firm
+Publications: AI hallucinations, Deep Learning Journey, Netflix and Blockbuster, Fenty Beauty Evolution Application`;
+
     const blob = new Blob([resumeContent], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -19,7 +56,7 @@ www.keerthishalom.com | linkedin.com/in/keerthi-shalom-v-625023323 | keerthishal
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
   };
-  
+
   useEffect(() => {
     const link = document.createElement('link');
     link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap';
@@ -199,7 +236,7 @@ www.keerthishalom.com | linkedin.com/in/keerthi-shalom-v-625023323 | keerthishal
                 <Github className="w-5 h-5" />
                 <span className="text-sm font-medium">GitHub</span>
               </a>
-              <button onClick={() => alert('Resume coming soon!')} className="flex items-center gap-2 px-5 py-3 rounded-full bg-black/5 hover:bg-pink-100 transition-all duration-300 hover:scale-105" style={{ color: '#1a1a1a' }}>
+              <button onClick={downloadResume} className="flex items-center gap-2 px-5 py-3 rounded-full bg-black/5 hover:bg-pink-100 transition-all duration-300 hover:scale-105" style={{ color: '#1a1a1a' }}>
                 <FileText className="w-5 h-5" />
                 <span className="text-sm font-medium">Resume</span>
               </button>
@@ -372,5 +409,3 @@ www.keerthishalom.com | linkedin.com/in/keerthi-shalom-v-625023323 | keerthishal
     </div>
   );
 }
-
-

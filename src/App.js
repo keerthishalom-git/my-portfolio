@@ -67,7 +67,7 @@ export default function Portfolio() {
       ]
     },
     {
-      title: "SDE Recruiter",
+      title: "Process Lead",
       company: "Amazon",
       location: "Hyderabad, India",
       period: "08/2019 – 01/2024",
@@ -75,7 +75,6 @@ export default function Portfolio() {
         "Orchestrated successful launch of seven large-scale warehouse facilities across North America, integrating complex ERP systems and Salesforce-based recruitment tools to streamline operational workflows",
         "Resolved 4000+ technical and operational stakeholder tickets by building custom automation scripts and implementing BI reporting dashboards for real-time issue tracking and resolution",
         "Led full-cycle technical recruitment for 2000+ Software Development Engineer (SDE) candidates, conducting technical screenings, coding assessments, and system design interviews",
-        "Developed automated candidate tracking system using Python and SQL, reducing time-to-hire by 35% and improving candidate experience metrics",
         "Collaborated with engineering leadership to refine job requirements, interview processes, and technical assessment frameworks",
         "Created comprehensive recruitment analytics reports to optimize sourcing strategies and diversity initiatives"
       ]
@@ -356,6 +355,7 @@ export default function Portfolio() {
     </div>
   );
 }
+
 
 
 

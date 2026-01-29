@@ -21,70 +21,110 @@ export default function Portfolio() {
   };
 
   const skills = [
-    { category: "AI & ML", items: ["Python", "TensorFlow", "PyTorch", "NLP", "LLMs (OpenAI, Claude, Mistral)", "RAG Pipelines", "Prompt Engineering", "LoRA", "Model Tuning"] },
-    { category: "Frontend & Design", items: ["React.js", "Modern Web Frameworks", "UI/UX Design", "Product Design", "Responsive Design"] },
-    { category: "Backend & Data", items: ["Flask", "Django", "Node.js", "SQL", "Data Pipelines", "Predictive Analytics", "scikit-learn"] },
-    { category: "Cloud & Tools", items: ["AWS (EC2, SNS, IAM)", "Git", "Jupyter", "Agile/Scrum", "Jira", "ERP", "Salesforce"] }
+    { category: "AI & ML", items: ["Python", "TensorFlow", "PyTorch", "scikit-learn", "NLP", "Predictive Modeling", "Neural Networks", "Deep Learning"] },
+    { category: "Frontend & Design", items: ["React.js", "Full-Stack Development", "UX Architecture", "Wireframing", "User Flow Design", "Figma", "Product Design"] },
+    { category: "Backend & Data", items: ["Flask", "Django", "Node.js", "SQL", "JavaScript", "Data Pipelines", "API Development", "VBA"] },
+    { category: "Cloud & DevOps", items: ["AWS (EC2, SNS, IAM, S3, Lambda)", "Docker", "Cloud Deployment Pipelines", "CI/CD Dashboards"] },
+    { category: "Tools & Platforms", items: ["Git", "GitHub", "Jupyter", "Jira", "Confluence", "Notion", "Power Query", "Excel (Advanced)", "Slack", "Miro"] },
+    { category: "Methodologies & Other", items: ["Agile/Scrum", "IoT Integration", "Supply Chain Management", "CCNA (Networking)", "HRC Database"]}
   ];
 
   const experiences = [
     {
-      title: "Web Developer • UI/UX Designer • Social Media Manager",
-      company: "Episcopal Diocese of Missouri & International Christian Fellowship",
+      title: "Technical Program Manager / End-to-End Product Owner",
+      company: "Episcopal Diocese of Missouri",
       location: "St. Louis, MO",
-      period: "10/2025 – Present",
+      period: "09/2025 – Present",
       highlights: [
-        "Architected and deployed AI-integrated responsive web interfaces using React.js and modern frontend frameworks, implementing predictive user analytics that drove a 38% increase in system efficiency and user engagement metrics",
-        "Engineered comprehensive brand identity system across multi-platform digital ecosystem (Google, Instagram, YouTube, Threads), developing automated content distribution pipelines that increased cross-platform engagement by 55%",
-        "Led full-cycle design sprints using Figma and Adobe XD, conducting user research and A/B testing to optimize conversion rates and user experience flows",
-        "Implemented SEO strategies and performance optimization techniques, achieving 90+ Lighthouse scores across all web properties"
+        "Created and delivered user-centered AI application with agentic capabilities, enabling autonomous task completion during offline periods",
+        "Owned end-to-end program execution for major product features, aligning engineering, legal, policy, stakeholders across parallel workstreams within the diocese",
+        "Partnered closely with engineering leadership to manage technical dependencies, unblock delivery risks, and improve development velocity",
+        "Built and maintained program artifacts including roadmaps, execution plans, risk registers, status dashboards, and launch communications",
+        "Designed comprehensive UX architecture includes user flows and wireframes to enhance accessibility across all age demographics",
+        "Led full stack engineering initiatives, overseeing frontend development, backend systems, API integration, and cloud deployment pipelines",
+        "Implemented AI/ML-driven features to optimize data flow and significantly improve user interaction quality"
       ]
     },
     {
-      title: "AI-First Product Manager & Software Engineering Intern",
-      company: "Airtribe",
-      location: "Remote",
-      period: "07/2025 – 09/2025",
+      title: "Technical Project Manager",
+      company: "Saint Louis University",
+      location: "St. Louis, MO",
+      period: "01/2024 – 12/2025",
       highlights: [
-        "Spearheaded end-to-end development of AI-native applications integrating LLMs (OpenAI GPT-4, Claude, Mistral) with custom embeddings and Retrieval-Augmented Generation (RAG) pipelines for enhanced contextual accuracy",
-        "Implemented advanced prompt engineering techniques and LoRA (Low-Rank Adaptation) fine-tuning to optimize model performance, achieving 25% improvement in response accuracy and 40% reduction in latency",
-        "Designed and built production-ready capstone AI product featuring scalable backend architecture (Flask/Django), PostgreSQL database optimization, and containerized deployment using Docker",
-        "Collaborated with cross-functional teams using Agile methodologies, managing sprint cycles and product roadmaps through Jira",
-        "Developed comprehensive API documentation and conducted code reviews to ensure best practices and maintainable codebases"
+        "Built AI-based recruiting platform with a team of 4, coordinating cross-functional engineering initiatives across platform, product, and infrastructure ideas",
+        "Led high-complexity, cross-team engineering programs, coordinating platform, product, and infrastructure among team to deliver multi-phase releases on schedule",
+        "Built and maintained program artifacts including roadmaps, execution plans, risk registers, status dashboards, and launch communications",
+        "Drove launch readiness across teams by coordinating cutover plans, validating feature completeness, and ensuring predictable, well-communicated releases",
+        "Facilitated technical decision-making by synthesizing trade-offs, driving stakeholder consensus, and resolving blocking issues without direct authority",
+        "Established scalable delivery processes to bring structure and clarity to ambiguous, fast-moving initiatives",
+        "Coordinated execution across distributed team members operating in different schedules, ensuring alignment and accountability"
       ]
     },
     {
-      title: "Technical Business Developer – Intern",
+      title: "Technical Business Developer",
       company: "Sodexo",
       location: "St. Louis, MO",
-      period: "05/2024 – 07/2025",
+      period: "05/2024 – 12/2025",
       highlights: [
-        "Engineered enterprise-grade AI-driven inventory management system utilizing predictive analytics (scikit-learn, TensorFlow) and real-time data processing pipelines, reducing manual errors by 40% and improving operational efficiency by 30%",
-        "Delivered complete Software Development Life Cycle (SDLC) execution: requirements gathering through stakeholder interviews, backend architecture design, automation logic implementation, and RESTful API integration",
-        "Built interactive Power BI dashboards with real-time KPI tracking, enabling data-driven decision making for inventory optimization",
-        "Implemented automated alert systems using AWS SNS for inventory threshold monitoring and anomaly detection",
-        "Conducted technical training sessions for 50+ staff members on new system adoption and best practices"
+        "Collaborated on Inventory Integration with AI (IoT) project to enhance operational efficiency across business units",
+        "Developed and implemented strategic business initiatives to improve client satisfaction and expand service offerings",
+        "Successfully onboarded new business partnerships, managing end-to-end negotiations, client requests, and financial agreements",
+        "Led team huddles to align daily operational goals, significantly boosting employee engagement and morale",
+        "Gained expertise in supply chain management and strategic people management through mentorship by Resident District Manager"
       ]
     },
     {
-      title: "Process Lead",
+      title: "Process Lead - People Experience and Technology (PXT)",
       company: "Amazon",
-      location: "Hyderabad, India",
-      period: "08/2019 – 01/2024",
+      location: "Hyderabad, India (North America & EMEA Regions)",
+      period: "03/2021 – 01/2024",
       highlights: [
-        "Orchestrated successful launch of seven large-scale warehouse facilities across North America, integrating complex ERP systems and Salesforce-based recruitment tools to streamline operational workflows",
-        "Resolved 4000+ technical and operational stakeholder tickets by building custom automation scripts and implementing BI reporting dashboards for real-time issue tracking and resolution",
-        "Led full-cycle technical recruitment for 2000+ Software Development Engineer (SDE) candidates, conducting technical screenings, coding assessments, and system design interviews",
-        "Collaborated with engineering leadership to refine job requirements, interview processes, and technical assessment frameworks",
-        "Created comprehensive recruitment analytics reports to optimize sourcing strategies and diversity initiatives"
+        "Managed end-to-end application screening process for Software Development Engineer Level 5 roles, processing approximately 700 candidates",
+        "Coordinated interviewing processes, employee referrals, interview loops, and debriefs for technical hiring",
+        "Successfully launched nearly 20 fulfillment centers across North America region through strategic talent acquisition",
+        "Collaborated with multiple stakeholders and clients across different time zones to ensure seamless operations",
+        "Conducted drug testing coordination for potential candidates by connecting with site managers across North America and vendor partners (Quest, ERP)"
+      ]
+    },
+    {
+      title: "Senior HR Analyst - People Experience and Technology (PXT)",
+      company: "Amazon",
+      location: "Hyderabad, India (North America & EMEA Regions)",
+      period: "08/2019 – 03/2021",
+      highlights: [
+        "Executed background checks and comprehensive application screening for technical positions",
+        "Demonstrated advanced Excel proficiency including VLOOKUP for data management and VBA script development for task automation",
+        "Operated HRC database systems and managed SIM (System Information Management) processes",
+        "Utilized Power Query for data transformation and integration from multiple sources to support robust data analysis"
       ]
     }
   ];
 
   const projects = [
     {
+      name: "AI-Based Recruiting Firm",
+      description: "Masters Research Project: Developed end-to-end AI recruiting platform with team of 4 members, implementing advanced matching algorithms and automated screening processes",
+      type: "Research Project",
+      url: "https://github.com/keerthishalom-git",
+      tags: ["AI", "Machine Learning", "Full-Stack", "Research"]
+    },
+    {
+      name: "Full Stack Web Application Development",
+      description: "Built multiple production-ready web applications using React.js, Node.js, and cloud technologies with complete deployment pipelines",
+      type: "Development",
+      url: "https://github.com/keerthishalom-git",
+      tags: ["React.js", "Node.js", "Cloud", "Full-Stack"]
+    },
+    {
+      name: "Deep Learning Application",
+      description: "Implemented single-layer neural network and planar data classification system from scratch using NumPy",
+      type: "Machine Learning",
+      url: "https://github.com/keerthishalom-git/python-basics-with-numpy",
+      tags: ["Python", "NumPy", "Neural Networks", "Deep Learning"]
+    },
+    {
       name: "Fenty Beauty's Digital Transformation",
-      description: "Comprehensive case study analyzing Fenty Beauty's agile transformation and digital strategy implementation",
+      description: "Comprehensive analysis of Fenty Beauty's agile transformation through strategic product management methodologies",
       type: "Product Management",
       url: "https://medium.com/@keerthishalom1/fenty-beautys-digital-transformation-through-agile-methodologies-2d8f0d65da3a",
       tags: ["Agile", "Digital Transformation", "Product Strategy"]
@@ -95,35 +135,28 @@ export default function Portfolio() {
       type: "Business Analysis",
       url: "https://medium.com/@keerthishalom1/business-case-study-on-blockbuster-netflix-ca103eb45412",
       tags: ["Strategy", "Market Analysis", "Innovation"]
-    },
-    {
-      name: "Python Deep Learning with NumPy",
-      description: "Implementation of neural network fundamentals from scratch using NumPy for educational purposes",
-      type: "Machine Learning",
-      url: "https://github.com/keerthishalom-git/python-basics-with-numpy",
-      tags: ["Python", "NumPy", "Neural Networks"]
-    },
-    {
-      name: "Agentic AI System",
-      description: "Built autonomous AI agents with decision-making capabilities and tool integration",
-      type: "AI/ML",
-      url: "https://github.com/keerthishalom-git",
-      tags: ["AI Agents", "LLMs", "Automation"]
-    },
-    {
-      name: "AI-based Recruiting Firm",
-      description: "Master's research project developing intelligent recruitment matching system",
-      type: "Research",
-      url: "https://github.com/keerthishalom-git",
-      tags: ["AI", "NLP", "Research"]
-    },
-    {
-      name: "AI Hallucinations Study",
-      description: "Research publication analyzing and mitigating hallucinations in large language models",
-      type: "Publication",
-      url: "https://medium.com/@keerthishalom1",
-      tags: ["Research", "LLMs", "AI Safety"]
     }
+  ];
+
+  const leadership = {
+    organization: "WiCyS-SLU",
+    role: "Chapter Director",
+    highlights: [
+      "Directed a 40+ member student chapter, organizing workshops, CTFs, and speaker sessions on cybersecurity, cloud, and application security",
+      "Partnered with industry professionals and faculty to host 10+ events annually, boosting student engagement in security careers by 35%",
+      "Mentored peers on topics such as incident response, ethical hacking, and cloud security, helping several members secure internships and research opportunities",
+      "Coordinated sponsorships, guest lectures, and hackathons by engaging with cybersecurity leaders and companies to provide real-world exposure",
+      "Fostered an inclusive and collaborative environment, aligning chapter goals with WiCyS national initiatives to support diversity in Technology",
+      "Lead the events for CPT workshops by collaborating with career services SLU"
+    ]
+  };
+
+  const certifications = [
+    "Neural Networks and Deep Learning - DeepLearning.AI (October 2025)",
+    "Digital Product Management: Modern Fundamentals - University of Virginia (May 2025)",
+    "Certified Software Development Professional (CSDP) - Saint Louis University (January 2025)",
+    "Architecting Solutions on AWS - Amazon Web Services (December 2024)",
+    "Cisco Certified Network Associate (CCNA) - Networking - Cisco Networking Academy (January 2021)"
   ];
 
   return (
@@ -142,7 +175,7 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-xl tracking-wider" style={{ fontWeight: 600, color: '#1a1a1a' }}>KS</div>
           <div className="flex gap-8 text-sm" style={{ color: '#2a2a2a' }}>
-            {['Home', 'About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
+            {['Home', 'About', 'Experience', 'Skills', 'Leadership', 'Projects', 'Certifications', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={'#' + item.toLowerCase()}
@@ -161,16 +194,16 @@ export default function Portfolio() {
           <div className="flex-1 space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl tracking-tight animate-fade-in" style={{ fontWeight: 200, background: 'linear-gradient(135deg, #f97316 0%, #a855f7 50%, #ec4899 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                Keerthi Shalom
+                Keerthi Shalom Vaddepalli
               </h1>
               <div className="h-px w-32 bg-gradient-to-r from-orange-400 via-purple-400 to-transparent"></div>
               <p className="text-lg md:text-xl tracking-wide" style={{ fontWeight: 400, color: '#2a2a2a' }}>
-                AI Product Manager • Software Engineer • UI/UX Designer
+                Technical Program Manager • Software Engineer • Product Manager
               </p>
             </div>
             
             <p className="text-base md:text-lg leading-relaxed max-w-xl" style={{ color: '#3a3a3a' }}>
-              Building intelligent systems and elegant experiences at the intersection of AI, engineering, and design.
+              Results-driven Technical Program Manager with nearly 7 years of experience in product lifecycle management, full-stack development, and AI/ML implementation. Expert in designing user-centric applications and driving business growth through innovative technology solutions.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -205,7 +238,7 @@ export default function Portfolio() {
               <div className="relative w-80 h-80 rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-gradient-to-br from-orange-100 to-purple-100">
                 <img 
                   src={profileImage} 
-                  alt="Keerthi Shalom" 
+                  alt="Keerthi Shalom Vaddepalli" 
                   className="w-full h-full object-cover"
                 />
                 <label className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
@@ -236,7 +269,7 @@ export default function Portfolio() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl mb-8 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>About Me</h2>
           <p className="text-center text-lg max-w-3xl mx-auto leading-relaxed" style={{ color: '#3a3a3a' }}>
-            As a passionate technologist at the intersection of AI, product management, and design, I specialize in building intelligent systems that solve real-world problems. With experience spanning from enterprise software development to AI-powered applications, I bring a unique blend of technical expertise and product thinking to every project. My work focuses on creating seamless user experiences powered by cutting-edge AI technologies, always with an eye toward scalability and impact.
+            Results-driven Technical Program Manager and Business Developer with nearly 7 years of experience in product lifecycle management, full-stack development, and AI/ML implementation. Proven expertise in designing user-centric applications, leading cross-functional teams, and driving business growth through strategic partnerships and innovative technology solutions. Skilled in Agile methodologies, cloud deployment, and managing complex stakeholder relationships across multiple time zones.
           </p>
         </div>
       </section>
@@ -273,7 +306,7 @@ export default function Portfolio() {
 
       <section id="skills" className="relative z-10 py-32 px-6 bg-white/30">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Skills & Expertise</h2>
+          <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Technical Skills</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {skills.map((skillGroup, idx) => (
               <div key={idx} className="p-8 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-purple-400 transition-all duration-500">
@@ -291,7 +324,27 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="projects" className="relative z-10 py-32 px-6">
+      <section id="leadership" className="relative z-10 py-32 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Leadership Experience</h2>
+          <div className="p-8 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-orange-400 transition-all duration-500 hover:shadow-xl">
+            <div className="mb-4">
+              <h3 className="text-2xl text-orange-600 mb-1" style={{ fontWeight: 400 }}>{leadership.organization}</h3>
+              <p className="text-lg" style={{ color: '#2a2a2a', fontWeight: 500 }}>{leadership.role}</p>
+            </div>
+            <ul className="space-y-2" style={{ color: '#3a3a3a' }}>
+              {leadership.highlights.map((highlight, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-orange-500 mt-1.5">•</span>
+                  <span className="leading-relaxed">{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="relative z-10 py-32 px-6 bg-white/30">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Projects & Publications</h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -322,7 +375,23 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="contact" className="relative z-10 py-32 px-6">
+      <section id="certifications" className="relative z-10 py-32 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Certifications</h2>
+          <div className="space-y-4">
+            {certifications.map((cert, idx) => (
+              <div key={idx} className="p-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-purple-400 transition-all duration-500">
+                <div className="flex gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <p className="leading-relaxed" style={{ color: '#2a2a2a' }}>{cert}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="relative z-10 py-32 px-6 bg-white/30">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="text-4xl mb-8" style={{ fontWeight: 300, color: '#1a1a1a' }}>Let's Connect</h2>
           <p className="text-lg" style={{ color: '#3a3a3a' }}>
@@ -332,6 +401,12 @@ export default function Portfolio() {
             <a href="mailto:keerthishalom1@gmail.com" className="flex items-center gap-2 px-6 py-3 rounded-full bg-orange-100 border border-orange-300 hover:bg-orange-200 transition-all duration-300" style={{ color: '#1a1a1a' }}>
               <Mail className="w-4 h-4" />
               <span>keerthishalom1@gmail.com</span>
+            </a>
+            <a href="tel:+13141954955" className="flex items-center gap-2 px-6 py-3 rounded-full bg-purple-100 border border-purple-300 hover:bg-purple-200 transition-all duration-300" style={{ color: '#1a1a1a' }}>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span>+1 (314) 195-4955</span>
             </a>
           </div>
         </div>
@@ -355,7 +430,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
-
-
-

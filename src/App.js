@@ -198,7 +198,7 @@ export default function Portfolio() {
               </h1>
               <div className="h-px w-32 bg-gradient-to-r from-orange-400 via-purple-400 to-transparent"></div>
               <p className="text-lg md:text-xl tracking-wide" style={{ fontWeight: 400, color: '#2a2a2a' }}>
-                Technical Program Manager • Software Engineer • Product Manager
+                Technical Program Manager • Software Engineer • AI Product Manager/Owner
               </p>
             </div>
             

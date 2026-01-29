@@ -202,10 +202,6 @@ export default function Portfolio() {
               </p>
             </div>
             
-            <p className="text-base md:text-lg leading-relaxed max-w-xl" style={{ color: '#3a3a3a' }}>
-              Results-driven Technical Program Manager with nearly 7 years of experience in product lifecycle management, full-stack development, and AI/ML implementation. Expert in designing user-centric applications and driving business growth through innovative technology solutions.
-            </p>
-
             <div className="flex flex-wrap gap-4 pt-4">
               <a href="https://www.linkedin.com/in/keerthi-shalom-v-625023323/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 rounded-full bg-black/5 hover:bg-orange-100 transition-all duration-300 hover:scale-105" style={{ color: '#1a1a1a' }}>
                 <Linkedin className="w-5 h-5" />

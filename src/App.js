@@ -74,7 +74,7 @@ export default function Portfolio() {
       ]
     },
     {
-      title: "Senior Associate (SME & Acting Process Lead) - People Experience and Technology (PXT)",
+      title: "Process Lead - People Experience and Technology (PXT)",
       company: "Amazon",
       location: "Hyderabad, India (North America & EMEA Regions)",
       period: "03/2021 – 01/2024",

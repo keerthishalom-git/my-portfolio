@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, FileText } from 'lucide-react';
 
-export default function App() {
+export default function Portfolio() {
   const [profileImage, setProfileImage] = useState('https://image2url.com/r2/default/images/1771915924678-2d8f50ae-5a1d-49d6-a111-8dd476e41784.jpeg');
 
   useEffect(() => {
@@ -152,48 +152,11 @@ export default function App() {
   };
 
   const certifications = [
-    {
-      title: "Neural Networks and Deep Learning",
-      issuer: "DeepLearning.AI",
-      date: "October 2025",
-      color: "orange"
-    },
-    {
-      title: "Digital Product Management: Modern Fundamentals",
-      issuer: "University of Virginia",
-      date: "May 2025",
-      color: "purple"
-    },
-    {
-      title: "Certified Software Development Professional (CSDP)",
-      issuer: "Saint Louis University",
-      date: "January 2025",
-      color: "pink"
-    },
-    {
-      title: "Architecting Solutions on AWS",
-      issuer: "Amazon Web Services",
-      date: "December 2024",
-      color: "orange"
-    },
-    {
-      title: "Foundations of Agile Project Management",
-      issuer: "Google and Scrum Alliance",
-      date: "2024",
-      color: "purple"
-    },
-    {
-      title: "Program Manager Capstone",
-      issuer: "IBM",
-      date: "2024",
-      color: "pink"
-    },
-    {
-      title: "Cisco Certified Network Associate (CCNA) - Networking",
-      issuer: "Cisco Networking Academy",
-      date: "January 2021",
-      color: "orange"
-    }
+    "Neural Networks and Deep Learning - DeepLearning.AI (October 2025)",
+    "Digital Product Management: Modern Fundamentals - University of Virginia (May 2025)",
+    "Certified Software Development Professional (CSDP) - Saint Louis University (January 2025)",
+    "Architecting Solutions on AWS - Amazon Web Services (December 2024)",
+    "Cisco Certified Network Associate (CCNA) - Networking - Cisco Networking Academy (January 2021)"
   ];
 
   return (
@@ -213,7 +176,7 @@ export default function App() {
           <div className="text-xl tracking-wider" style={{ fontWeight: 600, color: '#1a1a1a' }}>KS</div>
           <div className="flex gap-8 text-sm" style={{ color: '#2a2a2a' }}>
             {['Home', 'About', 'Experience', 'Skills', 'Leadership', 'Projects', 'Certifications', 'Contact'].map((item) => (
-              
+              <a
                 key={item}
                 href={'#' + item.toLowerCase()}
                 className="hover:text-orange-600 transition-colors duration-300 relative group"
@@ -411,39 +374,15 @@ export default function App() {
       <section id="certifications" className="relative z-10 py-32 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl mb-16 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Certifications</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {certifications.map((cert, idx) => {
-              const colorClasses = {
-                orange: { border: 'border-orange-400', bg: 'bg-orange-50', text: 'text-orange-600', badge: 'bg-orange-100' },
-                purple: { border: 'border-purple-400', bg: 'bg-purple-50', text: 'text-purple-600', badge: 'bg-purple-100' },
-                pink: { border: 'border-pink-400', bg: 'bg-pink-50', text: 'text-pink-600', badge: 'bg-pink-100' }
-              };
-              const colors = colorClasses[cert.color];
-              
-              return (
-                <div 
-                  key={idx} 
-                  className={`group p-6 rounded-2xl bg-white/70 backdrop-blur-sm border ${colors.border} hover:shadow-xl transition-all duration-500 hover:scale-105`}
-                >
-                  <div className="flex items-start justify-between mb-3">
-                    <h3 className={`text-lg font-medium ${colors.text} leading-tight flex-1`}>
-                      {cert.title}
-                    </h3>
-                    <svg className="w-6 h-6 text-gray-300 group-hover:text-current transition-colors flex-shrink-0 ml-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  
-                  <p className="text-sm font-medium mb-2" style={{ color: '#2a2a2a' }}>
-                    {cert.issuer}
-                  </p>
-                  
-                  <span className={`inline-block px-3 py-1 rounded-full ${colors.badge} text-xs font-medium`} style={{ color: '#2a2a2a' }}>
-                    {cert.date}
-                  </span>
+          <div className="space-y-4">
+            {certifications.map((cert, idx) => (
+              <div key={idx} className="p-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-purple-400 transition-all duration-500">
+                <div className="flex gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <p className="leading-relaxed" style={{ color: '#2a2a2a' }}>{cert}</p>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -487,4 +426,3 @@ export default function App() {
     </div>
   );
 }
-

@@ -28,6 +28,16 @@ export default function Portfolio() {
 
   const experiences = [
     {
+      title: "Technical Business Developer",
+      company: "Sodexo",
+      location: "St. Louis, MO",
+      period: "05/2024 – 12/2025",
+      highlights: [
+        "Collaborated with stakeholders and clients to resolve concerns, working directly with managers and leadership to address issues",
+        "Used AI tools to support scheduling, note-taking, and idea generation, contributing suggestions to improve the stakeholder experience"
+      ]
+    },
+    {
       title: "Senior Associate, PXT (People Experience & Technology)",
       company: "Amazon",
       location: "North America & EMEA regions",
@@ -118,7 +128,7 @@ export default function Portfolio() {
         <div className="max-w-5xl mx-auto px-6 py-3 flex justify-between items-center">
           <div className="text-lg tracking-wider" style={{ fontWeight: 600, color: '#1a1a1a' }}>KS</div>
           <div className="flex gap-6 text-sm" style={{ color: '#2a2a2a' }}>
-            {['About', 'Experience', 'Projects', 'Skills', 'Leadership', 'Certifications', 'Contact'].map((item) => (
+            {['About', 'Projects', 'Experience', 'Skills', 'Leadership', 'Certifications', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={'#' + item.toLowerCase()}
@@ -204,37 +214,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="experience" className="relative z-10 py-14 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl mb-8 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Experience</h2>
-          <div className="space-y-6">
-            {experiences.map((exp, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-orange-400 transition-all duration-300">
-                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
-                  <div>
-                    <h3 className="text-lg text-orange-600" style={{ fontWeight: 400 }}>{exp.title}</h3>
-                    <p className="text-base" style={{ color: '#2a2a2a', fontWeight: 500 }}>{exp.company}</p>
-                  </div>
-                  <div className="text-sm" style={{ color: '#4a4a4a' }}>
-                    <p>{exp.location}</p>
-                    <p>{exp.period}</p>
-                  </div>
-                </div>
-                <ul className="space-y-1.5" style={{ color: '#3a3a3a' }}>
-                  {exp.highlights.map((highlight, i) => (
-                    <li key={i} className="flex gap-2 text-sm">
-                      <span className="text-orange-500 mt-1">&bull;</span>
-                      <span className="leading-relaxed">{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="relative z-10 py-14 px-6 bg-white/30">
+      <section id="projects" className="relative z-10 py-14 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl mb-8 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Projects</h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -260,6 +240,36 @@ export default function Portfolio() {
                 </div>
                 <p className="text-xs text-pink-600" style={{ fontWeight: 500 }}>{project.type}</p>
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" className="relative z-10 py-14 px-6 bg-white/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl mb-8 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Experience</h2>
+          <div className="space-y-6">
+            {experiences.map((exp, idx) => (
+              <div key={idx} className="p-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-orange-400 transition-all duration-300">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                  <div>
+                    <h3 className="text-lg text-orange-600" style={{ fontWeight: 400 }}>{exp.title}</h3>
+                    <p className="text-base" style={{ color: '#2a2a2a', fontWeight: 500 }}>{exp.company}</p>
+                  </div>
+                  <div className="text-sm" style={{ color: '#4a4a4a' }}>
+                    <p>{exp.location}</p>
+                    <p>{exp.period}</p>
+                  </div>
+                </div>
+                <ul className="space-y-1.5" style={{ color: '#3a3a3a' }}>
+                  {exp.highlights.map((highlight, i) => (
+                    <li key={i} className="flex gap-2 text-sm">
+                      <span className="text-orange-500 mt-1">&bull;</span>
+                      <span className="leading-relaxed">{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>

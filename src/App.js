@@ -193,7 +193,7 @@ export default function Portfolio() {
                 <Github className="w-4 h-4" />
                 <span className="text-sm font-medium">GitHub</span>
               </a>
-              <a href="https://drive.google.com/uc?export=download&id=1wPvPgFhUm_Q35J3FMedjZH9ZXfDHTgXa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 hover:bg-pink-100 transition-all duration-300" style={{ color: '#1a1a1a' }}>
+              <a href="Download your resume – resume PM.docx" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 hover:bg-pink-100 transition-all duration-300" style={{ color: '#1a1a1a' }}>
                 <FileText className="w-4 h-4" />
                 <span className="text-sm font-medium">Resume</span>
               </a>

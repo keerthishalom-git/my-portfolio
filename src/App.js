@@ -23,10 +23,22 @@ export default function Portfolio() {
   const skills = [
     { category: "AI & ML", items: ["Python", "TensorFlow / Keras", "Neural Networks", "CNNs & Transfer Learning", "RAG & LLM APIs (Claude)", "Model Evaluation & Error Analysis"] },
     { category: "Cloud", items: ["AWS (Certified Solutions Architect)"] },
-    { category: "Product & Collaboration", items: ["Cross-Functional Stakeholder Coordination", "Ambiguous Problem-Solving", "Agile/Scrum", "Roadmapping"] }
+    { category: "Product & Collaboration", items: ["Cross-Functional Stakeholder Coordination", "Ambiguous Problem-Solving", "Agile/Scrum", "Roadmapping", "Product Strategy", "Requirements Gathering", "Backlog Prioritization", "Customer Discovery"] },
+    { category: "Web Development (Coursework)", items: ["JavaScript", "React", "Node.js/Express", "MongoDB", "Jest"] }
   ];
 
   const experiences = [
+    {
+      title: "Founder",
+      company: "Beans",
+      location: "Remote",
+      period: "11/2025 – Present",
+      highlights: [
+        "Founded and am building Beans, a two-sided marketplace connecting content creators and brands for sponsorship deals, currently live in a pre-launch waitlist stage",
+        "Designed and built separate creator-facing and brand-facing landing experiences solo (positioning, copy, and visual design) as the foundation for the full product build",
+        "Defined product strategy and positioning for Beans' two distinct user segments (creators and brands), translating market opportunity into a live pre-launch product"
+      ]
+    },
     {
       title: "Technical Business Developer",
       company: "Sodexo",
@@ -43,13 +55,14 @@ export default function Portfolio() {
       location: "North America & EMEA regions",
       period: "03/2021 – 01/2024",
       highlights: [
-        "Coordinated technical hiring processes end-to-end for Software Development Engineer roles, screening ~700 candidates across distributed stakeholder teams",
+        "Evaluated Software Development Engineer candidate profiles against structured technical criteria, making advance/dispose decisions across ~700 candidates",
         "Resolved 4,800+ stakeholder tickets, translating ambiguous requests into clear, actionable outcomes across regions and time zones",
-        "Supported hiring surges tied to nearly 20 fulfillment center launches, coordinating with site managers and vendor partners under time pressure"
+        "Launched 17 fulfillment centers across North America, coordinating with site managers and vendor partners under time pressure",
+        "Gathered and translated ambiguous stakeholder requirements into clear, actionable outcomes across regions and time zones"
       ]
     },
     {
-      title: "Senior HR Analyst, PXT",
+      title: "Senior Analyst, PXT",
       company: "Amazon",
       location: "North America & EMEA regions",
       period: "08/2019 – 03/2021",
@@ -70,14 +83,14 @@ export default function Portfolio() {
     },
     {
       name: "Model Tuning & Optimization Comparison",
-      description: "Systematically compared 6 training configurations (SGD, SGD+Momentum, Adam at 3 learning rates, Adam+BatchNorm). Found both too-high and too-low learning rates underperformed the default \u2014 best result: 97.84% with Adam at its standard rate.",
+      description: "Systematically compared 6 training configurations (SGD, SGD+Momentum, Adam at 3 learning rates, Adam+BatchNorm). Found both too-high and too-low learning rates underperformed the default; best result: 97.84% with Adam at its standard rate.",
       type: "Deep Learning",
       url: "https://github.com/keerthishalom-git",
       tags: ["Optimization", "Experimentation", "TensorFlow"]
     },
     {
       name: "Model Error Analysis Report",
-      description: "Conducted bias/variance diagnosis and systematic confusion-pattern analysis on a trained classifier, identifying which specific failure modes to prioritize rather than treating accuracy as a single number.",
+      description: "Conducted bias-variance tradeoff diagnosis and systematic confusion-pattern analysis on a trained classifier, exercising judgment to prioritize which failure modes mattered most rather than treating accuracy as a single number.",
       type: "ML Strategy",
       url: "https://github.com/keerthishalom-git",
       tags: ["Model Evaluation", "Diagnostics"]
@@ -88,6 +101,13 @@ export default function Portfolio() {
       type: "Computer Vision",
       url: "https://github.com/keerthishalom-git",
       tags: ["Transfer Learning", "CNNs", "Streamlit"]
+    },
+    {
+      name: "Adam: Autonomous Research Agent",
+      description: "Built and deployed a live web-based research agent using Claude's web search tool, implementing a genuine think, act, observe loop that autonomously decides how many searches a question requires. Designed a Flask backend with real-time progress streaming and production cost-safety infrastructure (rate limiting, free-tier limits, bring-your-own-key fallback). Triaged and fixed real model behavior issues surfaced by early users based on direct feedback.",
+      type: "Agentic AI / LLM Systems",
+      url: "https://adam-research-agent.onrender.com/",
+      tags: ["Claude API", "Flask", "Agentic AI"]
     },
     {
       name: "AI-Based Recruiting Platform",
@@ -109,10 +129,19 @@ export default function Portfolio() {
   };
 
   const certifications = [
-    "Neural Networks and Deep Learning \u2014 DeepLearning.AI (October 2025)",
-    "Architecting Solutions on AWS \u2014 Amazon Web Services (December 2024)",
-    "Digital Product Management: Modern Fundamentals \u2014 University of Virginia (May 2025)"
+    "Neural Networks and Deep Learning: DeepLearning.AI (October 2025)",
+    "Architecting Solutions on AWS: Amazon Web Services (December 2024)",
+    "Digital Product Management: Modern Fundamentals, University of Virginia (May 2025)"
   ];
+
+  const education = {
+    degree: "Master of Science, Information Systems",
+    school: "Saint Louis University",
+    highlights: [
+      "Coursework in enterprise systems design & architecture, cloud security fundamentals, and evidence-based decision making using structured, data-driven methods",
+      "Trained across standard project management frameworks (Agile/Scrum, Waterfall) and tools (Jira, Trello, MS Project) applied to real course projects"
+    ]
+  };
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-purple-50 overflow-hidden" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", color: '#1a1a1a' }}>
@@ -168,7 +197,7 @@ export default function Portfolio() {
                 <FileText className="w-4 h-4" />
                 <span className="text-sm font-medium">Resume</span>
               </a>
-              <a href="mailto:keerthishalom1@gmail.com" className="flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 hover:bg-orange-100 transition-all duration-300" style={{ color: '#1a1a1a' }}>
+              <a href="mailto:keerthi.shalomv@gmail.com" className="flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 hover:bg-orange-100 transition-all duration-300" style={{ color: '#1a1a1a' }}>
                 <Mail className="w-4 h-4" />
                 <span className="text-sm font-medium">Email</span>
               </a>
@@ -209,7 +238,7 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl mb-5 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>About</h2>
           <p className="text-center text-base max-w-3xl mx-auto leading-relaxed" style={{ color: '#3a3a3a' }}>
-            I'm a technical product thinker with a hands-on foundation in machine learning and a background coordinating complex, ambiguous work across stakeholders at scale. After nearly five years managing high-volume technical operations at Amazon, I built a practical, from-scratch understanding of neural networks, model evaluation, and LLM systems &mdash; training models, systematically comparing their failure modes, and studying where they break down. I'm drawn to the kind of nuanced, no-clear-answer problems in model behavior and alignment, where technical judgment and user empathy have to work together.
+            I'm a first-principles builder who trains and ships real AI systems: training neural networks from scratch, systematically comparing model failure modes, and designing, shipping, and iterating a live LLM-powered agent based on real user feedback and interaction patterns, including diagnosing, triaging, and fixing behavioral issues like incomplete or truncated outputs by adjusting prompts and system logic. I'm also founding Beans, a two-sided marketplace connecting creators and brands, where I own product thinking end-to-end, from positioning through user experience. Before this, I spent nearly five years at Amazon making structured judgment calls at scale, synthesizing 4,800+ stakeholder requests into clear, actionable outcomes across regions. What draws me is the space where technical depth meets human judgment: solving the no-clear-right-answer problems in how AI systems can behave safely. I hold an M.S. in Information Systems from Saint Louis University and an AWS Solutions Architect certification.
           </p>
         </div>
       </section>
@@ -278,7 +307,7 @@ export default function Portfolio() {
       <section id="skills" className="relative z-10 py-14 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl mb-8 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Skills</h2>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             {skills.map((skillGroup, idx) => (
               <div key={idx} className="p-5 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-purple-400 transition-all duration-300">
                 <h3 className="text-sm text-purple-600 mb-3" style={{ fontWeight: 600 }}>{skillGroup.category}</h3>
@@ -317,7 +346,19 @@ export default function Portfolio() {
 
       <section id="certifications" className="relative z-10 py-14 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl mb-8 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Certifications</h2>
+          <h2 className="text-2xl mb-8 text-center" style={{ fontWeight: 300, color: '#1a1a1a' }}>Education &amp; Certifications</h2>
+          <div className="p-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-purple-400 transition-all duration-300 mb-4">
+            <h3 className="text-lg text-purple-600" style={{ fontWeight: 400 }}>{education.degree}</h3>
+            <p className="text-base mb-3" style={{ color: '#2a2a2a', fontWeight: 500 }}>{education.school}</p>
+            <ul className="space-y-1.5" style={{ color: '#3a3a3a' }}>
+              {education.highlights.map((highlight, i) => (
+                <li key={i} className="flex gap-2 text-sm">
+                  <span className="text-purple-500 mt-1">&bull;</span>
+                  <span className="leading-relaxed">{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="space-y-2.5">
             {certifications.map((cert, idx) => (
               <div key={idx} className="p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-gray-200 hover:border-purple-400 transition-all duration-300">
@@ -338,9 +379,9 @@ export default function Portfolio() {
             Interested in collaborating or learning more about my work?
           </p>
           <div className="flex justify-center items-center">
-            <a href="mailto:keerthishalom1@gmail.com" className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-orange-100 border border-orange-300 hover:bg-orange-200 transition-all duration-300" style={{ color: '#1a1a1a' }}>
+            <a href="mailto:keerthi.shalomv@gmail.com" className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-orange-100 border border-orange-300 hover:bg-orange-200 transition-all duration-300" style={{ color: '#1a1a1a' }}>
               <Mail className="w-4 h-4" />
-              <span className="text-sm">keerthishalom1@gmail.com</span>
+              <span className="text-sm">keerthi.shalomv@gmail.com</span>
             </a>
           </div>
         </div>
